@@ -1,0 +1,25 @@
+#!/usr/bin/env sh
+
+PATH=$PATH:$HOME/.bin
+
+spacebar -m config position             top
+spacebar -m config height               33
+spacebar -m config spaces               on
+spacebar -m config clock                on
+spacebar -m config power                off
+spacebar -m config title                off
+spacebar -m config right_shell          on
+
+spacebar -m config right_shell_command  "defaults read ~/Library/Preferences/com.apple.HIToolbox.plist AppleCurrentKeyboardLayoutInputSourceID | sed 's/com\.apple\.keylayout\.//'"
+
+spacebar -m config text_font            "MesloLGS NF:Regular:25.0"
+spacebar -m config icon_font            "MesloLGS NF:Regular:25.0"
+
+spacebar -m config background_color     0xff000000
+
+spacebar -m config clock_icon           
+
+spacebar -m config space_icon_strip     I II III IV V VI VII VIII IX X
+spacebar -m config clock_format         "%R"
+
+echo "Loaded spacebar!"

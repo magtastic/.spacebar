@@ -1,2 +1,3 @@
 # .spacebar
+
 Spacebar config files
