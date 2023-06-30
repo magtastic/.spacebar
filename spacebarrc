@@ -10,7 +10,7 @@ spacebar -m config power                off
 spacebar -m config title                off
 spacebar -m config right_shell          on
 
-spacebar -m config right_shell_command  "defaults read ~/Library/Preferences/com.apple.HIToolbox.plist AppleCurrentKeyboardLayoutInputSourceID | sed 's/com\.apple\.keylayout\.//'"
+spacebar -m config right_shell_command  "/usr/local/bin/xkbswitch -ge"
 
 spacebar -m config text_font            "MesloLGS NF:Regular:25.0"
 spacebar -m config icon_font            "MesloLGS NF:Regular:25.0"
